@@ -7,5 +7,3 @@ set_global_assignment -name VHDL_FILE rtl/cpu68.vhd
 set_global_assignment -name VHDL_FILE rtl/moon_patrol_sound_board.vhd
 set_global_assignment -name VHDL_FILE rtl/traverse_usa.vhd
 set_global_assignment -name SYSTEMVERILOG_FILE "Arcade-TraverseUSA.sv"
-set_global_assignment -name VERILOG_FILE rtl/joydb9md.v
-set_global_assignment -name VERILOG_FILE rtl/joydb15.v
