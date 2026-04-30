@@ -364,10 +364,12 @@ wire m_right  =  joy[0];
 wire m_gas    =  joy[4];
 wire m_brake  =  joy[5];
 
-wire m_left_2  = joy[1];
-wire m_right_2 = joy[0];
-wire m_gas_2   = joy[4];
-wire m_brake_2 = joy[5];
+// [MiSTer-DB9 BEGIN] - P2 reads joystick_1 so 2P splitter works independently (was OR-ed joy)
+wire m_left_2  = joystick_1[1];
+wire m_right_2 = joystick_1[0];
+wire m_gas_2   = joystick_1[4];
+wire m_brake_2 = joystick_1[5];
+// [MiSTer-DB9 END]
 
 wire m_start1 = joy[6];
 wire m_start2 = joy[7];
